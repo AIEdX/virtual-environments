@@ -1,15 +1,15 @@
 | Announcements |
 |-|
-| [[macOS, Windows] .NET SDK pre-installation policy will be changed on September, 6](https://github.com/actions/virtual-environments/issues/3809) |
+| [macOS-latest workflows will use macOS-11](https://github.com/actions/virtual-environments/issues/4060) |
 ***
 # macOS 10.15 info
-- System Version: macOS 10.15.7 (19H1323)
+- System Version: macOS 10.15.7 (19H1417)
 - Kernel Version: Darwin 19.6.0
-- Image Version: 20210831.3
+- Image Version: 20210919.1
 
 ## Installed Software
 ### Language and Runtime
-- .NET SDK 2.1.300 2.1.301 2.1.302 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.1.506 2.1.507 2.1.602 2.1.603 2.1.604 2.1.607 2.1.700 2.1.701 2.1.801 2.1.802 2.1.803 2.1.804 2.1.805 2.1.806 2.1.807 2.1.808 2.1.809 2.1.810 2.1.811 2.1.812 2.1.813 2.1.814 2.1.815 2.1.816 2.1.818 3.1.100 3.1.101 3.1.200 3.1.201 3.1.300 3.1.301 3.1.302 3.1.401 3.1.402 3.1.403 3.1.404 3.1.405 3.1.406 3.1.407 3.1.408 3.1.409 3.1.410 3.1.411 3.1.412 5.0.100 5.0.101 5.0.102 5.0.200 5.0.201 5.0.202 5.0.300 5.0.301 5.0.302 5.0.400
+- .NET SDK 2.1.302 2.1.403 2.1.507 2.1.607 2.1.701 2.1.818 3.1.101 3.1.201 3.1.302 3.1.413 5.0.102 5.0.202 5.0.302 5.0.401
 - Bash 3.2.57(1)-release
 - Clang/LLVM 12.0.0 is default
 - Clang/LLVM 12.0.1 is available on `'$(brew --prefix llvm)/bin/clang'`
@@ -29,24 +29,24 @@
 - Perl 5.34.0
 - PHP 8.0.10
 - Python 2.7.18
-- Python 3.9.6
+- Python 3.9.7
 - R 4.1.1
 - Ruby 2.7.4p191
 
 ### Package Management
-- Bundler version 2.2.26
+- Bundler version 2.2.27
 - Carthage 0.38.0
-- CocoaPods 1.10.2
-- Composer 2.1.6
-- Homebrew 3.2.10
+- CocoaPods 1.11.2
+- Composer 2.1.8
+- Homebrew 3.2.12
 - Miniconda 4.10.3
 - NPM 6.14.15
 - NuGet 5.6.0.6489
 - Pip 20.3.4 (python 2.7)
-- Pip 21.1.3 (python 3.9)
+- Pip 21.2.4 (python 3.9)
 - Pipx 0.16.4
-- RubyGems 3.2.26
-- Vcpkg 2021 (build from master \<2ea3e99>)
+- RubyGems 3.2.27
+- Vcpkg 2021 (build from master \<4428702>)
 - Yarn 1.22.5
 
 #### Environment variables
@@ -63,26 +63,26 @@
 ### Utilities
 - 7-Zip 17.04
 - aria2 1.36.0
-- azcopy 10.12.0
+- azcopy 10.12.1
 - bazel 4.2.1
 - bazelisk 1.10.1
 - bsdtar 3.3.2 - available by 'tar' alias
-- Curl 7.78.0
+- Curl 7.79.0
 - Git LFS: 2.13.3
 - Git: 2.33.0
 - GitHub CLI: 2.0.0
-- GNU parallel 20210622
+- GNU parallel 20210822
 - GNU Tar 1.34 - available by 'gtar' alias
-- GNU Wget 1.21.1
+- GNU Wget 1.21.2
 - gpg (GnuPG) 2.3.2
-- helm v3.6.3+gd506314
+- helm v3.7.0+geeac838
 - Hub CLI: 2.14.2
 - jq 1.6
 - mongo v5.0.2
 - mongod v5.0.2
-- Newman 5.2.4
+- Newman 5.3.0
 - OpenSSL 1.1.1l  24 Aug 2021 `(/usr/local/opt/openssl -> /usr/local/Cellar/openssl@1.1/1.1.1l)`
-- Packer 1.7.4
+- Packer 1.7.5
 - PostgreSQL 13.4
 - psql (PostgreSQL) 13.4
 - Sox 14.4.2
@@ -96,14 +96,14 @@
 ### Tools
 - Aliyun CLI 3.0.90
 - App Center CLI 2.10.0
-- AWS CLI 2.2.33
-- AWS SAM CLI 1.29.0
+- AWS CLI 2.2.39
+- AWS SAM CLI 1.31.0
 - AWS Session Manager CLI 1.2.245.0
-- Azure CLI 2.27.2
+- Azure CLI 2.28.0
 - Bicep CLI 0.4.613
 - Cabal 3.4.0.0
 - Cmake 3.21.2
-- Fastlane 2.193.0
+- Fastlane 2.194.0
 - GHC 9.0.1
 - GHCup v0.1.16.2
 - Stack 2.7.3
@@ -112,25 +112,25 @@
 - Xcode Command Line Tools 12.4.0.0.1.1610135815
 
 ### Linters
-- SwiftLint 0.43.1
+- SwiftLint 0.44.0
 - yamllint 1.26.3
 
 ### Browsers
-- Safari 14.1.2 (15611.3.10.1.5)
-- SafariDriver 14.1.2 (15611.3.10.1.5)
-- Google Chrome 93.0.4577.63 
-- ChromeDriver 92.0.4515.107
-- Microsoft Edge 92.0.902.84 
-- MSEdgeDriver 92.0.902.84
-- Mozilla Firefox 91.0.2
+- Safari 14.1.2 (15611.3.10.1.7)
+- SafariDriver 14.1.2 (15611.3.10.1.7)
+- Google Chrome 93.0.4577.82 
+- ChromeDriver 93.0.4577.63
+- Microsoft Edge 93.0.961.52 
+- MSEdgeDriver 93.0.961.52
+- Mozilla Firefox 92.0
 - geckodriver 0.29.1
 
 #### Environment variables
-| Name            | Value                                          |
-| --------------- | ---------------------------------------------- |
-| CHROMEWEBDRIVER | /usr/local/Caskroom/chromedriver/92.0.4515.107 |
-| EDGEWEBDRIVER   | /usr/local/share/edge_driver                   |
-| GECKOWEBDRIVER  | /usr/local/opt/geckodriver/bin                 |
+| Name            | Value                                         |
+| --------------- | --------------------------------------------- |
+| CHROMEWEBDRIVER | /usr/local/Caskroom/chromedriver/93.0.4577.63 |
+| EDGEWEBDRIVER   | /usr/local/share/edge_driver                  |
+| GECKOWEBDRIVER  | /usr/local/opt/geckodriver/bin                |
 
 ### Java
 | Version             | Vendor        | Environment Variable |
@@ -152,10 +152,10 @@
 #### Python
 - 2.7.18
 - 3.5.10
-- 3.6.14
-- 3.7.11
-- 3.8.11
-- 3.9.6
+- 3.6.15
+- 3.7.12
+- 3.8.12
+- 3.9.7
 
 #### PyPy
 - 2.7.18 [PyPy 7.3.5]
@@ -171,20 +171,21 @@
 - 1.13.15
 - 1.14.15
 - 1.15.15
-- 1.16.7
+- 1.16.8
+- 1.17.1
 
 ### Rust Tools
-- Cargo 1.54.0
-- Rust 1.54.0
-- Rustdoc 1.54.0
+- Cargo 1.55.0
+- Rust 1.55.0
+- Rustdoc 1.55.0
 - Rustup 1.24.3
 
 #### Packages
 - Bindgen 0.59.1
-- Cargo-audit 0.14.1
+- Cargo-audit 0.15.2
 - Cargo-outdated v0.9.17
 - Cbindgen 0.20.0
-- Clippy 0.1.54
+- Clippy 0.1.55
 - Rustfmt 1.4.37-stable
 
 ### PowerShell Tools
@@ -201,12 +202,12 @@
 ### Web Servers
 | Name  | Version | ConfigFile                      | ServiceStatus | ListenPort |
 | ----- | ------- | ------------------------------- | ------------- | ---------- |
-| httpd | 2.4.48  | /usr/local/etc/httpd/httpd.conf | stopped       | 80         |
-| nginx | 1.21.1  | /usr/local/etc/nginx/nginx.conf | stopped       | 80         |
+| httpd | 2.4.49  | /usr/local/etc/httpd/httpd.conf | stopped       | 80         |
+| nginx | 1.21.3  | /usr/local/etc/nginx/nginx.conf | stopped       | 80         |
 
 ### Xamarin
 #### Visual Studio for Mac
-- 8.10.8.0
+- 8.10.9.3
 
 #### Xamarin bundles
 | symlink          | Xamarin.Mono | Xamarin.iOS | Xamarin.Mac | Xamarin.Android |
@@ -250,7 +251,7 @@
 
 #### Xcode Support Tools
 - xcpretty 0.3.0
-- xcversion 2.7.0
+- xcversion 2.8.0
 - Nomad CLI 0.0.2
 - Nomad shenzhen CLI 0.14.3
 - xctool 0.3.7
@@ -354,7 +355,7 @@
 | Google APIs                | addon-google_apis-google-21<br>addon-google_apis-google-22<br>addon-google_apis-google-23<br>addon-google_apis-google-24                                                                                                        |
 | Google Play services       | 49                                                                                                                                                                                                                              |
 | Google Repository          | 58                                                                                                                                                                                                                              |
-| NDK                        | 15.2.4203891<br>18.1.5063045<br>21.4.7075529<br>22.1.7171670                                                                                                                                                                    |
+| NDK                        | 15.2.4203891<br>18.1.5063045<br>21.4.7075529 (default)<br>22.1.7171670<br>23.0.7599858                                                                                                                                          |
 | SDK Patch Applier v4       | 1                                                                                                                                                                                                                               |
 | Intel HAXM                 | 7.6.5                                                                                                                                                                                                                           |
 
@@ -364,7 +365,7 @@
 | ANDROID_HOME            | /Users/runner/Library/Android/sdk                                                                  |
 | ANDROID_NDK_18R_PATH    | /Users/runner/Library/Android/sdk/ndk/18.1.5063045                                                 |
 | ANDROID_NDK_HOME        | /Users/runner/Library/Android/sdk/ndk-bundle -> /Users/runner/Library/Android/sdk/ndk/21.4.7075529 |
-| ANDROID_NDK_LATEST_HOME | /Users/runner/Library/Android/sdk/ndk/22.1.7171670                                                 |
+| ANDROID_NDK_LATEST_HOME | /Users/runner/Library/Android/sdk/ndk/23.0.7599858                                                 |
 | ANDROID_NDK_ROOT        | /Users/runner/Library/Android/sdk/ndk-bundle -> /Users/runner/Library/Android/sdk/ndk/21.4.7075529 |
 | ANDROID_SDK_ROOT        | /Users/runner/Library/Android/sdk                                                                  |
 
